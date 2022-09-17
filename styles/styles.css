@@ -1,5 +1,8 @@
 body {
     width: 500px;
+    margin: auto;
+    /* display: grid;
+    align-self: center; */
 }
 header {
     background-color: green;
