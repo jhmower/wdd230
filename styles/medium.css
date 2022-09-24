@@ -1,0 +1,14 @@
+@media screen and (min-width: 32.5em) {
+    h1{
+        font-size: 3em;
+        padding-left: 50px;
+    }
+
+    header{
+        background-color: navy;
+    }
+
+    footer{
+        background-color: navy;
+    }
+  }
