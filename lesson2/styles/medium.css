@@ -1,0 +1,22 @@
+@media screen and (min-width: 32.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    #whitespace {
+        grid-column: 1/2;
+    }
+
+    #alignment {
+        grid-column: 2/3;
+    }
+
+    #contrast {
+        grid-column: 1/3;
+    }
+
+    #contrast img{
+        width: 700px
+    }
+  }
