@@ -37,20 +37,12 @@ footer {
 }
 
 #last-updated {
-    color: yellow;
+    color: #ffff00;
 }
 
 .footer-content {
     justify-self: center;
     padding: 25px 25px;
-}
-
-ul {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-ul a {
-    font-family: 'Franklin Gothic Medium', Arial, sans-serif ;
 }
 
 nav {
@@ -88,4 +80,44 @@ main p {
 #logo {
     width: 100px;
     padding-left: 100px;
+}
+
+#colors {
+    width: 100%;
+    /* padding-right: 10px; */
+}
+
+td {
+    border: 1px solid black;
+}
+
+#paragraphSample {
+    background-color: #F6F4F3;
+    font-size: 16px;
+    color: #183059;
+}
+#headerSample, #h1Sample {
+    background-color: #F03A47;
+    font-size: 2em;
+    color: #F6F4F3;
+}
+#navSample {
+    background-color: #AF5B5B;
+    font-size: .9rem;
+    color: #F6F4F3;
+}
+#h2Sample {
+    background-color: #F6F4F3;
+    font-size: 26px;
+    color: #183059;
+}
+#h3Sample {
+    background-color: #F6F4F3;
+    font-size: 22px;
+    color: #183059;
+}
+#footerSample {
+    background-color: #F03A47;
+    font-size: 16px;
+    color: #F6F4F3;
 }
