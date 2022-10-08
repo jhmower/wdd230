@@ -1,0 +1,166 @@
+body {
+    margin: auto;
+    background-color: #F6F4F3;
+    color: #183059;
+    font-family: 'Roboto', sans-serif;
+}
+/* header  */
+header {
+    background-color: #F03A47;
+    border-radius: 5px;
+}
+
+header em {
+    font-style: normal;
+    color: #F6F4F3;
+}
+
+#header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#secondaryHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+#linkedin {
+    width: 20px;
+}
+
+#facebook {
+    width: 30px;
+}
+
+h1 {
+    grid-column: 2/3;
+    color: #F6F4F3;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+}
+
+
+/* Main  */
+main {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 200px;
+    grid-template-columns: auto;
+    margin: 10px 5px;
+}
+
+main div {
+    background-color: lightgray;
+    margin: 5px;
+    border: 1px solid gray;
+    color: gray;
+    padding: 10px;
+}
+
+#spotlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#spotlight1, #spotlight2 {
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+#spotlight3 {
+    display: none;
+}
+
+#join {
+    display: none;
+}
+
+
+/* Footer  */
+footer {
+    background-color: #F03A47;
+    color: #F6F4F3;
+    border-radius: 5px;
+}
+
+#last-updated {
+    color: #ffff00;
+}
+
+.footer-content {
+    justify-self: center;
+    padding: 25px 25px;
+}
+
+#primary-footer {
+    padding: 10px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+footer a {
+    color: #F6F4F3;
+}
+
+#logo {
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+/* Navigation  */
+nav {
+    background-color: #AF5B5B;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    margin: .2rem 2vw;
+    border: none;
+    font-size: 2rem;
+    color: #F6F4F3;
+    background-color: #AF5B5B;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #F6F4F3;
+    border-top: 1px solid rgba(0, 0, 0, .5);
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+nav ul {
+    display: none;
+}
+nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
