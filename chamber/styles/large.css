@@ -44,6 +44,16 @@
         margin: 0;
         flex: 1 1 auto;
     }
+    
+    #spotlight1 img, #spotlight2 img{
+        justify-content: center;
+        width: 110px;
+    }
+
+    #spotlight3 h2 {
+        font-size: xxx-large;
+        margin: 0;
+    }
 
     #event {
         grid-column: 1/2;
@@ -80,4 +90,5 @@
         background-color: #183059;
         color: #F6F4F3;
     }
+    
   }

@@ -26,3 +26,9 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
 datefield.innerHTML = `<em>${fulldate}</em>`;
+
+const upperHeader = document.getElementById('upper-header')
+if (d.getDay() == 1 || d.getDay() == 2) {
+    upperHeader.style.display = "block"
+}
+console.log(d.getDay())
