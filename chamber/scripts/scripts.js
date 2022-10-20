@@ -7,20 +7,20 @@ let d = new Date();
 let year = d.getFullYear();
 // console.log(year)
 // document.getElementById("#copywriteYear").textContent = year;
-let copywrite = document.querySelector("#copywriteYear");
+let copywrite = document.querySelector("#copywrite-year");
 copywrite.insertAdjacentText("beforeend", year)
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open")
-    document.getElementById("hamburgerBtn").classList.toggle("open")
+    document.getElementById("primary-nav").classList.toggle("open")
+    document.getElementById("hamburger-btn").classList.toggle("open")
 }
 
-const x = document.getElementById("hamburgerBtn")
+const x = document.getElementById("hamburger-btn")
 
 x.onclick = toggleMenu
 
 
-const datefield = document.querySelector("#currentDate");
+const datefield = document.querySelector("#current-date");
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
