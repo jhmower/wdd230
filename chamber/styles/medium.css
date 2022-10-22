@@ -41,5 +41,24 @@
     #spotlight1 img, #spotlight2 img{
         width: 200px;
     }
+
+    #weather h2 {
+        margin-top: 0;
+    }
+
+    #hero #hero-picture {
+        display: flex;
+        /* width: 6429px; */
+        /* height: 100%; */
+        margin: 0;
+        justify-content: center;
+    }
     
+    #hero #hero-image{
+        width: 500px;
+        /* height: 100%; */
+        margin: 0;
+        justify-self: center;
+    
+    }
   }

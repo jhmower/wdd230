@@ -111,6 +111,15 @@ div h2 {
     position: relative;
 }
 
+#windchill {
+    text-align: center;
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    /* justify-content: center; */
+}
+
+
 #hero button {
     background-color: #AF5B5B;
     border-radius: 5px;
@@ -122,9 +131,20 @@ div h2 {
     padding: 5px;
 }
 
-#hero #img-rect {
+#hero #hero-picture {
+    display: flex;
     width: 100%;
     height: 100%;
+    margin: 0;
+    justify-content: center;
+}
+
+#hero #hero-image{
+    /* width: 100%; */
+    height: 100%;
+    margin: 0;
+    justify-self: center;
+
 }
 
 /* Footer  */
@@ -156,10 +176,12 @@ footer a {
 }
 
 .logo {
-    width: 100px;
-    margin-left: 10px;
+    /* height: 100%; */
+    height: 100px;
+    margin: 10px;
+    /* margin-left: 10px; */
     border-radius: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 
@@ -198,6 +220,9 @@ nav ul li a .social-media{
     background-color: black;
 }
 
+.social-media {
+    width: 30px;
+}
 #linkedin {
     width: 20px;
 }

@@ -15,11 +15,8 @@
 </head>
 <body>
     <header>
-        <div id="upper-header">
-            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-        </div>
         <div id="header-flex">
-            <img src="images/logo2.png" alt="Logo for site" class="logo">
+            <img src="images/logo2.webp" alt="Logo for site" class="logo">
             <h1>Fairview Chamber of Commerce</h1>
         </div>
         <div id="secondary-header">
@@ -35,16 +32,31 @@
                 <li><a href="target-audience.html">Target Audience</a></li>
                 <li><a href="color-scheme.html">Color Scheme</a></li>
                 <li><a href="typography.html">Typography</a></li>
-                <!-- <li><div id="social-media">
+                <li id="social-media-li"><div id="social-media">
                     <a href="https://www.facebook.com" class="social-media"><img src="images/facebook-logo.png" id="facebook" alt="Facebook icon"></a>
                     <a href="https://www.linkedin.com" class="social-media"><img src="images/linkedin-logo.png" id="linkedin" alt="Linkedin icon"></a>
-                </div></li> -->
+                </div></li>
             </ul>
         </nav>
+        <div id="upper-header">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
     </header>
     <main>
         <div id="hero">
-            <img src="images/hero-min-rect.jpg" alt="picture of tree" id="img-rect">
+            <!-- <figure id="hero-figure">
+                <img src="images/wdd230-small.jpg" alt="picture of business meeting" id="hero-image" sizes="50vw"
+                srcset="
+                images/wdd230-medium.jpg 500w,
+                images/wdd230-large.jpg 800w,
+                ">
+            </figure> -->
+            
+            <picture id="hero-picture">
+                <source media="(min-width:900px)" srcset="images/wdd230-large.jpg">
+                <source media="(min-width:490px)" srcset="images/wdd230-medium2.jpg">
+                <img src="images/wdd230-small2.jpg" alt="picture of business meeting" id="hero-image">
+            </picture>
             <button>Join Us</button>
         </div>
         <div id="event">
@@ -56,6 +68,7 @@
             <p>
                 S &#127783; | M &#127783; | T &#9928; | W &#9925; | T &#9728;&#65039; | F &#9728;&#65039; | S &#9728;&#65039;
             </p>
+            <hr><div id="windchill"></div>
         </div>
         <div id="news">
             <h2>News Release! &#128293;</h2>
@@ -98,7 +111,7 @@
                 <h3>Fairview Chamber of Commerce</h3>
                 <p> <a href="www.maps.google.com">Directions</a> 801-358-3376</p>
             </div>
-            <img src="images/logo2.png" alt="Logo for site" class="logo">
+            <img src="images/logo2.webp" alt="Logo for site" class="logo">
         </div>
         <div class="footer-content">
             &copy; <span id="copywrite-year"></span> | Jacob Mower | Utah
@@ -107,5 +120,6 @@
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

@@ -65,6 +65,21 @@
         grid-row: 2/3;
     }
 
+    #hero #hero-picture {
+        display: flex;
+        /* width: 100%; */
+        height: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+    
+    #hero #hero-image{
+        /* width: 100%; */
+        height: 100%;
+        margin: 0;
+        justify-self: center;
+    
+    }
 
     /* Navigation area  */
     nav button {
@@ -90,11 +105,17 @@
         background-color: #183059;
         color: #F6F4F3;
     }
-    nav ul li a .social-media{
-        display: inline;
+    nav ul li a #social-media{
+        display: flex;
         padding: 0;
-        text-decoration: none;
-        color: #F6F4F3;
-        background-color: black;
+        flex-direction: row;
+    }
+    .social-media {
+        padding: 0;
+        margin: 0;
+        width: 30px;
+    }
+    #social-media-li {
+        width: 30px;
     }
   }
