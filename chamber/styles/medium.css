@@ -55,8 +55,8 @@
     }
     
     #hero #hero-image{
-        width: 500px;
-        /* height: 100%; */
+        /* width: 500px; */
+        height: 100%;
         margin: 0;
         justify-self: center;
     
