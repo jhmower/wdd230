@@ -1,39 +1,26 @@
-const chapInput = document.getElementById('favchap');
-const addButton = document.getElementById('addChap');
-const chapList = document.getElementById('list');
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
 
-addButton.addEventListener("click", function () {
-    if (chapInput.value.length > 0) {
-        const newChapter = document.createElement('li');
-        const newText = document.createElement('span');
-        const newButton = document.createElement('button');
-        
-        newText.innerHTML = chapInput.value;
-        newButton.textContent = 'X'
-        newChapter.appendChild(newText)
-        newChapter.appendChild(newButton)
 
-        chapList.appendChild(newChapter);
-        
-        newButton.addEventListener("click", function() {
-            chapList.removeChild(newChapter)
-        })
+if ("IntersectionObserver" in window) {
+const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+    if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
     }
-    chapInput.value = ""
-    chapInput.focus()
-
+    });
 });
-// function addLi() {
-//     chapInputValue = chapInput.value;
-//     if (chapInput != "") {
-//         console.log(chapInput.value)
-//         const newChapter = document.createElement('li');
-//         chapList.appendChild(newChapter);
-//         newChapter.innerHTML = chapInputValue; 
-//     };
-// };
-
-// function consoleTest() {
-//     console.log('test')
-// }
-// addButton.addEventListener("click", addLi);
+imagesToLoad.forEach((img) => {
+    observer.observe(img);
+});
+} else {
+imagesToLoad.forEach((img) => {
+    loadImages(img);
+});
+}
