@@ -1,0 +1,32 @@
+Lazy loading:
+Loading a portion of the page so that the user doesn't get impatient
+This is done through the javascript defer (<script src="app.js" defer></script>), or by loading elements
+after they're needed using await import. 
+images:Download images through javascript 
+Progressive loading:
+(<img src="data/img/placeholder.png" data-src="data/img/SLUG.jpg" alt="NAME" />)
+then use javascript to change the src to be the data-src after loading (
+    let imagesToLoad = document.querySelectorAll("img[data-src]");
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
+imagesToLoad.forEach((img) => {
+  loadImages(img);
+});
+
+)
+
+We can also blur the placeholder image to make it look nicer
+
+Images: lazy loading:only loads images when they appear in the viewport aka loading on demand
+<img
+  src="data/img/placeholder.png"
+  data-src="data/img/SLUG.jpg"
+  alt="NAME"
+  loading="lazy" />
+Can also use the IntersectionObserver function in javascript to accomplish it
+

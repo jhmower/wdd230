@@ -93,3 +93,13 @@ footer {
   display: table;
   clear: both;
 }
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 3s;
+    height: 300px;
+  }

@@ -33,12 +33,12 @@
         justify-content: space-between;
     }
     
-    #spotlight1, #spotlight2 {
+    #spotlight-1, #spotlight-2 {
         margin: 0;
         flex: 1 1 auto;
     }
 
-    #spotlight1 img, #spotlight2 img{
+    #spotlight-1 img, #spotlight-2 img{
         width: 200px;
     }
 

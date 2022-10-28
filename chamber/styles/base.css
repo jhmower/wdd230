@@ -63,21 +63,21 @@ main div {
     justify-content: space-between;
 }
 
-#spotlight1, #spotlight2 {
+#spotlight-1, #spotlight-2 {
     margin: 0;
     flex: 1 1 auto;
 }
 
-#spotlight3 {
+#spotlight-3 {
     display: none;
 }
 
-#spotlight1 img, #spotlight2 img{
+#spotlight-1 img, #spotlight-2 img{
     justify-content: center;
     width: 80px;
 }
 
-#spotlight1 p, #spotlight2 p, #spotlight3 p{
+#spotlight-1 p, #spotlight-2 p, #spotlight-3 p{
     text-align: center;
     margin: 0;
 }
