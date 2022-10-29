@@ -261,7 +261,17 @@ nav ul.open {
 
 #discover {
     display: grid;
-    grid-template-rows: 10em 10em 10em 10em 10em;
-    grid-template-columns: 100%;
-    margin: 10px 5px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    /* margin: 10px 5px;s */
+}
+
+#discover div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discover-image:hover {
+    filter: blur(1px) grayscale(50%);
 }
