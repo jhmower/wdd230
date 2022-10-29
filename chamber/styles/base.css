@@ -31,6 +31,7 @@ header em {
 #secondary-header {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 h1 {
@@ -39,7 +40,6 @@ h1 {
     font-family: 'Roboto', sans-serif;
     align-self: center;
 }
-
 
 /* Main  */
 main {
@@ -254,4 +254,14 @@ nav ul.open {
 }
 #hamburger-btn.open span:nth-child(2){
     display: block;
+}
+
+
+/* Discover page */
+
+#discover {
+    display: grid;
+    grid-template-rows: 10em 10em 10em 10em 10em;
+    grid-template-columns: 100%;
+    margin: 10px 5px;
 }
