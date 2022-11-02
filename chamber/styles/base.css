@@ -209,7 +209,6 @@ nav ul li a {
     padding: .8rem 2vw;
     text-decoration: none;
     color: #F6F4F3;
-    border-top: 1px solid rgba(0, 0, 0, .5);
 }
 
 nav ul li a .social-media{
@@ -274,4 +273,9 @@ nav ul.open {
 
 .discover-image:hover {
     filter: blur(1px) grayscale(50%);
+}
+
+
+#social-media-li {
+    display: flex;
 }

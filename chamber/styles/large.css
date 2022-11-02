@@ -114,8 +114,11 @@
         padding: 0;
         margin: 0;
         width: 30px;
+        display: flex;
     }
     #social-media-li {
         width: 30px;
+        display: flex;
+        align-items: center;
     }
   }
