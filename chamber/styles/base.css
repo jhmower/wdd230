@@ -42,7 +42,7 @@ h1 {
 }
 
 /* Main  */
-main {
+#home {
     display: grid;
     grid-template-rows: 10em 10em 10em 10em 20em;
     grid-template-columns: auto;
@@ -278,4 +278,112 @@ nav ul.open {
 
 #social-media-li {
     display: flex;
+}
+
+/* Join Form */
+
+#join-page {
+    grid-template-columns: auto;
+    /* display: flex; */
+}
+form fieldset {
+    margin: 2rem 0;
+    border: thin solid #183059;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    text-align: center;
+    color: #183059;
+    padding: 0 .5rem;
+}
+
+form label.personal-info, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #183059;
+    font-size: .8rem;
+}
+
+form label.personal-info input, form label.personal-info select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form label.membership {
+    display: block;
+    padding: .75rem;
+    color: #183059;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #AF5B5B;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.personal-info input:required {
+    border-left: red solid .3rem;
+    width: 19.7rem;
+}
+
+form label.personal-info input:required:valid {
+    border-left: green solid 6px;
+    width: 19.7rem;
+}
+
+#membership-levels {
+    display: none;
+    margin: 2rem 0;
+    border: thin solid #183059;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+#gold:hover {
+    color: yellow;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#silver:hover {
+    color: silver;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+#bronze:hover {
+    color: #cd7f32;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+#np:hover {
+    color: #fc4e03;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+/* thank you */
+
+#thank-you div{
+    height:25em;
+    border: none;
 }

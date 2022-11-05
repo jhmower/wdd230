@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fairviewchamberofcommerce.com</title>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="header-flex">
+            <img src="images/logo-2.webp" alt="Logo for site" class="logo">
+            <h1>Fairview Chamber of Commerce</h1>
+        </div>
+        <div id="secondary-header">
+            <div id="current-date">
+            </div>
+        </div>
+        <nav>
+            <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li id="social-media-li">
+                    <a href="https://www.facebook.com" class="social-media"><img src="images/facebook-logo.png" id="facebook" alt="Facebook icon"></a>
+                    <a href="https://www.linkedin.com" class="social-media"><img src="images/linkedin-logo.png" id="linkedin" alt="Linkedin icon"></a>
+                </li>
+            </ul>
+        </nav>
+        <div id="upper-header">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+    </header>
+    <main id="join-page">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Membership Information</legend>
+                <label class="personal-info">First Name* <input type="text" name="fname" required></label>
+                <label class="personal-info">Last Name* <input type="text" name="lname" required></label>
+                <label class="personal-info">Position <input type="text" name="lname" pattern="[A-Za-z0-9\-]{7,}" title="Position must be alpha characters, hyphens, and spaces with a minimum of seven characters"></label>                
+                <label class="personal-info">Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                <label class="personal-info">Phone* <input type="tel" name="phone" required placeholder="1235557890"></label>
+                <label class="personal-info">Business Name<input type="text" name="bname" required></label>
+                <label class="personal-info">Business Description<input type="text" name="bdescription"></label>
+                <!-- <input type="date" name="bdescription" value=""> -->
+                <label class="form-time"><script> localStorage.setItem ("last_laded_date",new Date())</script></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label class="membership" id="np"><input type="radio" name="audience" value="beginner"> Non Profit $100/mo</label>
+                <label class="membership" id="bronze"><input type="radio" name="audience" value="intermediate"> Bronze $100/mo</label>
+                <label class="membership" id="silver"><input type="radio" name="audience" value="advanced"> Silver $150/mo</label>
+                <label class="membership" id="gold"><input type="radio" name="audience" value="advanced"> Gold $200/mo</label>
+            </fieldset>
+            <input type="submit" value="Join Chamber!" class="submitBtn">
+        </form>
+        <div id="membership-levels">
+            <h2>Membership Levels</h2>
+            <h3>Non Profit $100/mo</h3>
+            <ul>
+                <li>Invitation to weekly meetings</li>
+                <li>Access to membership directory</li>
+                <li>Logo on newsletter</li>
+            </ul>
+            <h3>Bronze $100/mo</h3>
+            <ul>
+                <li>Invitation to weekly meetings</li>
+                <li>Access to membership directory</li>
+            </ul>
+            <h3>Silver $150/mo</h3>
+            <ul>
+                <li>Invitation to weekly meetings</li>
+                <li>Access to membership directory</li>
+                <li>Logo on newsletter</li>
+            </ul>
+            <h3>Gold $200/mo</h3>
+            <ul>
+                <li>Invitation to weekly meetings</li>
+                <li>Access to membership directory</li>
+                <li>Logo on newsletter</li>
+                <li>Advertisement on website home page</li>
+            </ul>
+        </div>
+    </main>
+    <footer id="footer">
+        <div id="primary-footer">
+            <div id="footer-info">
+                <h3>Fairview Chamber of Commerce</h3>
+                <p> <a href="www.maps.google.com">Directions</a> 801-358-3376</p>
+            </div>
+            <img src="images/logo-2.webp" alt="Logo for site" class="logo">
+        </div>
+        <div class="footer-content">
+            &copy; <span id="copywrite-year"></span> | Jacob Mower | Utah
+            <br>
+            <span id="last-updated"></span>
+            <br>
+            <span class="label">Your last visit was: </span><span class="last-visit"></span>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>
