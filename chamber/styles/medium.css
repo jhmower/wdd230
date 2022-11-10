@@ -74,6 +74,13 @@
     #join-page {
         grid-template-columns: auto;
     }
+
+    #discover {
+        justify-content: center;
+    }
+    /* #discover  p{
+        max-width: 30rem;
+    } */
   }
 
 

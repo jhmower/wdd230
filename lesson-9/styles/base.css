@@ -1,0 +1,28 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 3s;
+    height: 300px;
+  }
+
+
+
+
+  
