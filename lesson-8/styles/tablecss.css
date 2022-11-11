@@ -30,6 +30,7 @@ table {
 	border: thin solid black;
 	border-collapse: collapse;
 	margin: auto;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 th, td {
