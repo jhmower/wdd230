@@ -148,4 +148,22 @@
         
     }
     
+    #discover {
+        grid-template-columns: auto 40%;
+    }
+    .discover-image {
+        width: 100%;
+        height: 100%;
+    }
+    #demo {
+        grid-column: 2/3;
+        grid-row: 1/6;
+    }
+    #demo li, #demo p {
+        margin: 20px;
+    }
+    #demo p {
+        font-size: 18px;
+        line-height: 25px;
+    }
   }
