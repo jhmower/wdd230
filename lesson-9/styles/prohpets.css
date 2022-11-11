@@ -1,0 +1,35 @@
+body {
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+main {
+	background-color: lightgray;
+	margin: 2rem;
+	box-shadow: 10px 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+	background-color: lightblue;
+	border: thin solid black;
+	margin: 10px;
+	/* justify-content: center;
+	justify-items: center; */
+	text-align: center;
+}
+  
+img {
+    height: 300px;
+}
+
+
+
+
+  
