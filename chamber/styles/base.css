@@ -388,3 +388,50 @@ form label.personal-info input:required:valid {
     height:25em;
     border: none;
 }
+
+/* directory */
+
+.directory-grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    border: none;
+
+}
+
+.directory-list {
+    grid-template-columns: auto;
+    border: none;
+}
+
+section {
+	border: thin solid gray;
+	margin: 10px;
+	text-align: center;
+}
+
+.directory-list img {
+    display: none;
+}
+
+.directory-list section {
+    margin: 0;
+}
+
+#directory img {
+    width: 100px;
+}
+
+#grid-buttons {
+    justify-content: center;
+    display: flex;
+    border: none;
+}
+
+#grid-buttons button {
+    margin: 10px;
+    font-size: 30px;
+}
+
+/* #grid-buttons {
+    font-size: 30px;
+} */

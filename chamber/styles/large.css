@@ -166,4 +166,24 @@
         font-size: 18px;
         line-height: 25px;
     }
+
+    /* directory */
+    .directory-list section {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+        vertical-align: middle;
+        padding: 5px;
+    }
+    
+    .directory-list p, .directory-list a {
+        vertical-align: middle;
+        text-align: center;
+    }
+    .directory-list h2 {
+        width: 10rem;
+        text-align: left;
+        /* padding-left: 5px; */
+    }
   }

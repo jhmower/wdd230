@@ -1,0 +1,76 @@
+{
+    "members": [
+        {
+            "name": "Chick-fil-A",
+            "address": "300N 305W Fairview",
+            "phone": "(801) 455-9999",
+            "url": "https://www.chick-fil-a.com",
+            "membership": "Gold",
+            "logo": "images/chick-fil-a-logo.png"
+        },
+        {
+            "name": "Jiffy Lube",
+            "address": "200N 210E Fairview",
+            "phone": "(801) 875-8822",
+            "url": "https://www.jiffylube.com",
+            "membership": "Gold",
+            "logo": "images/jiffy-lube-brand-logo.png"
+        },
+        {
+            "name": "Fairview Bath and Faucets",
+            "address": "149S 300W Fairview",
+            "phone": "(801) 203-1908",
+            "url": "https://www.fiarviewbathfaucets.com",
+            "membership": "Gold",
+            "logo": "images/fairview-bath-faucet.jpeg"
+        },
+        {
+            "name": "Autozone",
+            "address": "300N 310W Fairview",
+            "phone": "(801) 173-7777",
+            "url": "https://www.autozone.com",
+            "membership": "Bronze",
+            "logo": "images/autozone.svg"
+        },
+        {
+            "name": "Pawn Shop",
+            "address": "200N 305W Fairview",
+            "phone": "(801) 394-4832",
+            "url": "https://www.pawnfairview.com",
+            "membership": "Bronze",
+            "logo": "images/pawn-shop.jpg"
+        },       
+        {
+            "name": "Walmart",
+            "address": "300S 390W Fairview",
+            "phone": "(801) 328-5843",
+            "url": "https://www.walmart.com",
+            "membership": "Bronze",
+            "logo": "images/walmart.jpg"
+        },        
+        {
+            "name": "Home Depot",
+            "address": "100N 520W Fairview",
+            "phone": "(801) 458-5834",
+            "url": "https://www.homedepot.com",
+            "membership": "Bronze",
+            "logo": "images/home-depot.jpg"
+        },        
+        {
+            "name": "Cafe Rio",
+            "address": "100N 150W Fairview",
+            "phone": "(801) 489-5833",
+            "url": "https://www.caferio.com",
+            "membership": "Silver",
+            "logo": "images/cafe-rio.jpeg"
+        },
+        {
+            "name": "Ross",
+            "address": "300S 175E Fairview",
+            "phone": "(801) 642-3822",
+            "url": "https://www.rossstores.com",
+            "membership": "Silver",
+            "logo": "images/ross.svg"
+        }
+    ]
+}
