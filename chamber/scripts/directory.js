@@ -26,6 +26,7 @@ function displayMembers(member) {
     logo.setAttribute('loading', 'lazy');
   
     // Add/append the section(card) with the h2 element
+    card.setAttribute('class', "directory-section")
     card.appendChild(h2);
     card.appendChild(logo);
     card.appendChild(address);

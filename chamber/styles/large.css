@@ -128,24 +128,18 @@
         align-items: stretch;
     }
     form fieldset {
-        margin: 2rem 0;
         border: thin solid #183059;
         border-radius: 10px;
         padding: .5rem 2%;
         width: 25em;
-        /* max-width: 45%; */
-        /* background-color: gray; */
       }
 
     #membership-levels {
         display: block;
-        /* background-color: blue; */
-        margin: 2rem 0;
         border: thin solid #183059;
         border-radius: 10px;
         padding: .5rem 2%;
         width: 45%;
-        
     }
     
     #discover {
@@ -184,6 +178,5 @@
     .directory-list h2 {
         width: 10rem;
         text-align: left;
-        /* padding-left: 5px; */
     }
   }

@@ -41,6 +41,10 @@ h1 {
     align-self: center;
 }
 
+#current-date {
+    margin-bottom: .5rem;
+}
+
 /* Main  */
 #home {
     display: grid;
@@ -285,13 +289,18 @@ nav ul.open {
 
 #join-page {
     grid-template-columns: auto;
-    /* display: flex; */
+    padding: 2rem;
 }
+
 form fieldset {
-    margin: 2rem 0;
     border: thin solid #183059;
     border-radius: 10px;
     padding: .5rem 2%;
+}
+
+form label {
+    width: 50%;
+    margin: 0 auto;
 }
 
 form legend {
@@ -333,13 +342,14 @@ form input.submitBtn {
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
+    width: 80%;
+    margin: 0 auto;
+    /* max-width: 20rem; */
 }
 
 form label.personal-info input:required {
     border-left: red solid .3rem;
-    width: 19.7rem;
+    /* width: 19.7rem; */
 }
 
 form label.personal-info input:required:valid {
@@ -349,10 +359,18 @@ form label.personal-info input:required:valid {
 
 #membership-levels {
     display: none;
-    margin: 2rem 0;
     border: thin solid #183059;
     border-radius: 10px;
     padding: .5rem 2%;
+}
+
+#membership-levels article, #membership-levels h2{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#submit-button {
+border: none;
 }
 
 #gold:hover {
@@ -403,7 +421,7 @@ form label.personal-info input:required:valid {
     border: none;
 }
 
-section {
+.directory-section {
 	border: thin solid gray;
 	margin: 10px;
 	text-align: center;
