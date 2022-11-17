@@ -280,6 +280,10 @@ nav ul.open {
     filter: blur(1px) grayscale(50%);
 }
 
+/* .discover-image:hover {
+    filter: none;
+} */
+
 
 #social-media-li {
     display: flex;
@@ -336,6 +340,7 @@ form label.membership {
 }
 
 form input.submitBtn {
+    display: block;
     border: none;
     background-color: #AF5B5B;
     color: white;
@@ -370,7 +375,8 @@ form label.personal-info input:required:valid {
 }
 
 #submit-button {
-border: none;
+    border: none;
+    display: block;
 }
 
 #gold:hover {
