@@ -1,9 +1,7 @@
-
+// select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const windchillHTML = document.querySelector('#windchill');
-const windSpeedHTML = document.querySelector('#windspeed');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&appid=ae3f38095e2dd7b93c364f6048ac73f0&units=imperial';
 
@@ -15,9 +13,7 @@ function displayResults(weatherData) {
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = desc.toUpperCase();
-  windSpeedHTML.textContent = `Windspeed: ${weatherData.wind.speed}mph`;
-
+  captionDesc.textContent = desc;
 }
 
 async function apiFetch() {
@@ -36,14 +32,3 @@ async function apiFetch() {
 }
 
 apiFetch();
-
-let temp = currentTemp.textContent;
-let windSpeed = windSpeedHTML.textContent;
-
-if (temp <= 50 && windSpeed >3.0) {
-    f = 35.74 + (0.6215*temp) - (35.75 * (windSpeed ** 0.16)) + (0.4275*temp*(windSpeed ** 0.16))
-    windchillDisplay = f.toFixed(1)
-    windchillHTML.textContent = `Windchill: ${windchillDisplay}&deg;F`
-} else {
-    windchillHTML.textContent = "Windchill: N/A"
-}

@@ -55,13 +55,16 @@
         </div>
         <div id="weather">
             <h2>Weather</h2>
-            <h2>&#127783;</h2>
-            <p>
-                Rainy
-                <span id="temp">47</span>&#176;F  
-                Wind:<span id="wind">12</span>mph
-            </p>
-            <hr><div id="windchill"></div>
+            <p><span id="current-temp"></span> &deg;F</p>
+            <figure>
+              <img src="" alt="" id="weather-icon" />
+              <figcaption></figcaption>
+            </figure>
+            <hr>
+            <div id="wind">
+                <div id="windspeed"></div>
+                <div id="windchill"></div>
+            </div>
         </div>
         <div id="news">
             <h2>News Release! &#128293;</h2>
@@ -113,6 +116,7 @@
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <!-- <script src="scripts/weatherapi.js"></script> -->
     <script src="scripts/windchill.js"></script>
 </body>
 </html>

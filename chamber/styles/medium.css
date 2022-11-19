@@ -1,7 +1,7 @@
 @media screen and (min-width: 32.5em) {
     #home {
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 10em 10em 20em 10em 10em;
+        grid-template-rows: 10em 10em 20em 10em 13em;
     }
 
     #hero {
@@ -44,6 +44,11 @@
 
     #weather h2 {
         margin-top: 0;
+    }
+
+    #wind {
+        display: flex;
+        flex-direction: column;
     }
 
     #hero #hero-picture {

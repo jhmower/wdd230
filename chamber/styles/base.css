@@ -48,7 +48,7 @@ h1 {
 /* Main  */
 #home {
     display: grid;
-    grid-template-rows: 10em 10em 10em 10em 20em;
+    grid-template-rows: 10em 10em 12em 10em 20em;
     grid-template-columns: auto;
     margin: 10px 5px;
 }
@@ -107,19 +107,35 @@ div h2 {
     margin: 0;
 }
 
-#weather p {
+#weather {
+    padding: 0;
+}
+
+#weather h2{
+    margin: 0;
+}
+
+#weather p, figure {
     text-align: center;
+    margin: 0;
+}
+
+#wind {
+    text-align: center;
+    border: none;
+    padding: 5px;
 }
 
 #hero {
     position: relative;
 }
 
-#windchill {
+#windchill, #windspeed {
+    display: inline;
     text-align: center;
     border: none;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
     /* justify-content: center; */
 }
 
