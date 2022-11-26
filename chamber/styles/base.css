@@ -67,6 +67,10 @@ main div {
     justify-content: space-between;
 }
 
+#spotlights p {
+    margin: 5px;
+}
+
 #spotlight-1, #spotlight-2 {
     margin: 0;
     flex: 1 1 auto;
@@ -296,9 +300,7 @@ nav ul.open {
     filter: blur(1px) grayscale(50%);
 }
 
-/* .discover-image:hover {
-    filter: none;
-} */
+
 
 
 #social-media-li {
@@ -472,6 +474,32 @@ form label.personal-info input:required:valid {
     font-size: 30px;
 }
 
-/* #grid-buttons {
-    font-size: 30px;
-} */
+/* contact */
+
+#questions {
+    height: 10rem;
+}
+
+#contact-page {
+    grid-template-columns: auto;
+    padding: 2rem;
+}
+
+#contact-info {
+    display: block;
+    border: thin solid #183059;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+#contact-info h2{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact-info-details {
+    margin: auto;
+    border: none;
+    width: 50%;
+}

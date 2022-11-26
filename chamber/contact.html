@@ -29,7 +29,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="join.html">Join Us</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="typography.html">Typography</a></li>
                 <li id="social-media-li">
                     <a href="https://www.facebook.com" class="social-media"><img src="images/facebook-logo.png" id="facebook" alt="Facebook icon"></a>
                     <a href="https://www.linkedin.com" class="social-media"><img src="images/linkedin-logo.png" id="linkedin" alt="Linkedin icon"></a>
@@ -40,45 +40,30 @@
             <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
         </div>
     </header>
-    <main id="home">
-        <div id="hero">            
-            <picture id="hero-picture">
-                <source media="(min-width:900px)" srcset="images/wdd230-large.jpg">
-                <source media="(min-width:490px)" srcset="images/wdd230-medium-2.jpg">
-                <img src="images/wdd230-small-2.jpg" alt="picture of business meeting" id="hero-image">
-            </picture>
-            <button>Join Us</button>
-        </div>
-        <div id="event">
-            <h2>Next Meeting</h2> 
-            Our next meeting will be this Wednesday at 7:00 pm in <a href="maps.google.com">city hall</a>!
-        </div>
-        <div id="weather">
-            <h2>Weather</h2>
-            <p><span id="current-temp"></span> &deg;F</p>
-            <figure>
-              <img src="" alt="" id="weather-icon" />
-              <figcaption></figcaption>
-            </figure>
-            <hr>
-            <div id="wind">
-                <div id="windspeed"></div>
-                <div id="windchill"></div>
+    <main id="contact-page">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact</legend>
+                <label class="personal-info">First Name* <input type="text" name="fname" required></label>
+                <label class="personal-info">Last Name* <input type="text" name="lname" required></label>
+                <label class="personal-info">Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                <label class="personal-info" >Question* <input id="questions" type="text" name="question" required></label>
+                <label class="form-time"><script> localStorage.setItem ("last_laded_date",new Date())</script></label>
+            </fieldset>   
+            <div id="submit-button"><input type="submit" value="Join Chamber!" class="submitBtn"></div>
+        </form>   
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <div id="contact-info-details">
+                <h3>Address</h3> 
+                <p>100N 150W Fairview</p>
+                <h3>Phone</h3>
+                <a href="tel:8013583376">801-358-3376</a>
+                <h3>Email</h3> 
+                <a href="mailto:fairviewchamber@gmail.com">fairviewchamber@gmail.com</a>
             </div>
-        </div>
-        <div id="news">
-            <h2>News Release! &#128293;</h2>
-            <p>
-                As many of you heard, the library on center street burned down last week. As a result the citizenship classes have no where to meet now.
-                If you know of somewhere that would be a good place for them to meet, please reach out to (801)-867-5309.
-            </p>
-        </div>
-        <div id="spotlights">
-        </div>
-        <div id="join">
-            <h2>Interested in joined us?</h2>
-            <button>Click Here</button>
-        </div>
+        </section>
+  
     </main>
     <footer id="footer">
         <div id="primary-footer">
@@ -92,11 +77,11 @@
             &copy; <span id="copywrite-year"></span> | Jacob Mower | Utah
             <br>
             <span id="last-updated"></span>
+            <br>
+            <span class="label">Your last visit was: </span><span class="last-visit"></span>
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
-    <!-- <script src="scripts/weatherapi.js"></script> -->
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/discover.js"></script>
 </body>
 </html>

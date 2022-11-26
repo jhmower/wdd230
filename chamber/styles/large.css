@@ -179,4 +179,25 @@
         width: 10rem;
         text-align: left;
     }
+
+    /* contact */
+    #contact-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    #contact-info {
+        display: block;
+        border: thin solid #183059;
+        border-radius: 10px;
+        padding: .5rem 2%;
+        width: 45%;
+    }
+    #contact-info-details {
+        margin: auto;
+        border: none;
+        width: 50%;
+    }
   }
