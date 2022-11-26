@@ -16,7 +16,7 @@ function displayResults(weatherData) {
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc.toUpperCase();
-  windSpeedHTML.textContent = `Windspeed: ${weatherData.wind.speed}mph`;
+  windSpeedHTML.textContent = `Windspeed: ${weatherData.wind.speed} mph`;
 
 }
 
