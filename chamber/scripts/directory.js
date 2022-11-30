@@ -2,7 +2,6 @@ const requestURL = 'scripts/data.json';
 const cards = document.querySelector('directory');
 
 function displayMembers(member) {
-    // Create elements to add to the document
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let logo = document.createElement('img');
@@ -12,7 +11,6 @@ function displayMembers(member) {
 
 
   
-    // Change the textContent property of the h2 element to contain the prophet's full name
     h2.textContent = `${member.name}`;
     address.textContent = `${member.address}`;
     phone.textContent = `${member.phone}`;
@@ -20,12 +18,10 @@ function displayMembers(member) {
     url.setAttribute('href', member.url);
 
   
-    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', member.logo);
     logo.setAttribute('alt', `Logo of ${member.name}`);
     logo.setAttribute('loading', 'lazy');
   
-    // Add/append the section(card) with the h2 element
     card.setAttribute('class', "directory-section")
     card.appendChild(h2);
     card.appendChild(logo);
@@ -33,7 +29,6 @@ function displayMembers(member) {
     card.appendChild(phone);
     card.appendChild(url);
   
-    // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div#directory').appendChild(card);
 }
 
@@ -50,14 +45,9 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const members = jsonObject['members'];
-    console.table(members)
-    // const member1 = jasonObject['members.']
-    // console.table(member1)
     members.forEach(displayMembers);
     gold_members = []
     members.forEach(findGold)
-    console.log(gold_members)
-
 });
 
 
@@ -68,16 +58,13 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("#directory");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
 	display.classList.add("directory-grid");
 	display.classList.remove("directory-list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
-
+listbutton.addEventListener("click", showList); 
 function showList() {
 	display.classList.add("directory-list");
 	display.classList.remove("directory-grid");
