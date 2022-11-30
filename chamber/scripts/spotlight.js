@@ -48,10 +48,9 @@ function displayMembers(member) {
 function findGoldSilver(member) {
   if (member.membership == "Gold") {
     gold_members.push(member)
-  } else if (member.membership == "Gold"){
+  } else if (member.membership == "Silver"){
     gold_members.push(member)
   };
-
 }
 
 function shuffle(array) {
