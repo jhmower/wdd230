@@ -1,0 +1,109 @@
+/* nav */
+nav{
+    background-color: #025002;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    font-family: 'Nerko One', cursive;
+}
+.logo {
+    height: 50px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#logo-title {
+    color: white;
+    display: flex;
+    vertical-align: middle;
+}
+#logo-title h1 {
+    margin: 10px 10px 0 0;
+}
+nav button {
+    /* margin: .2rem 2vw; */
+    border: none;
+    font-size: 2rem;
+    color: #F6F4F3;
+    background-color: #025002;
+}
+#nav-constant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 2vw;
+    text-decoration: none;
+    color: #F6F4F3;
+    size: 20px;
+}
+/* hamburger menu stuff */
+nav ul {
+    display: none;
+}
+nav ul.open {
+    display: block;
+}
+#hamburger-btn span:nth-child(1){
+    display: block;
+}
+#hamburger-btn span:nth-child(2){
+    display: none;
+}
+
+#hamburger-btn.open span:nth-child(1){
+    display: none;
+}
+#hamburger-btn.open span:nth-child(2){
+    display: block;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    background-color: #026902;
+    vertical-align: middle;
+    justify-content: center;
+    font-family: 'Nerko One', cursive;
+
+}
+header h1 {
+    margin: 0;
+    color: white;
+    margin-top: 10px;
+}
+/* body */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    display: grid;
+    grid-template-rows: auto 10em 10em 10em;
+}
+#hero {
+    background-color: gray;
+}
+main div {
+    border: thin solid gray;
+    margin: 5px;
+}
+#carlsbad {
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+#carlsbad h2{
+    margin: 0;
+
+}
+/* footer */
+footer {
+    margin: 10px;
+    background-color: #026902;
+}
