@@ -48,17 +48,17 @@ nav ul {
 nav ul.open {
     display: block;
 }
-#hamburger-btn span:nth-child(1){
+#hamburger-menu-btn span:nth-child(1){
     display: block;
 }
-#hamburger-btn span:nth-child(2){
+#hamburger-menu-btn span:nth-child(2){
     display: none;
 }
 
-#hamburger-btn.open span:nth-child(1){
+#hamburger-menu-btn.open span:nth-child(1){
     display: none;
 }
-#hamburger-btn.open span:nth-child(2){
+#hamburger-menu-btn.open span:nth-child(2){
     display: block;
 }
 
@@ -88,6 +88,11 @@ main {
 }
 #hero {
     background-color: gray;
+    justify-content: center;
+    justify-self: center;
+}
+#hero-image {
+    border-radius: 30px;
 }
 main div {
     border: thin solid gray;
@@ -104,6 +109,36 @@ main div {
 }
 /* footer */
 footer {
-    margin: 10px;
     background-color: #026902;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    color: white;
+}
+#footer-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#footer-content a{
+    color: white;
+}
+#footer-content a:visited{
+    color: white;
+}
+#social-links {
+    display: flex;
+    justify-content: center;
+}
+#instagram{
+    margin-left: 5px;
+}
+
+/* fresh */
+fieldset {
+    display: flex;
+    flex-direction: column;
 }

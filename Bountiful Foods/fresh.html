@@ -32,24 +32,32 @@
         <h1>Bountiful Foods</h1>
     </header>
     <main>
-        <div id="hero">
-            <picture id="hero-image">
-                <source>
-                <source media="(min-width:520px)" srcset="images/hero-1-medium.jpg">
-                <img src="images/hero-1-small.jpg">
-            </picture>
-        </div>
-        <div id="carlsbad">
-            <h2>Our Home Carlsbad</h2>
-            <p>Carlsbad California is a medium sized town 87 miles South of Los Angeles. Renowned for it's
-                tourism revolving around Legoland, museums, and it's Golf industry, it's a wonderful place
-                to visit the next time you're in Sothern California!
-            </p>
-        </div>
-        <div id="previous-orders">
-            <h2>Your Previous Orders</h2>
-        </div>
-        <div id="weather">
+        <form method="get">
+            <fieldset>
+                <label>First Name* <input type="text" name="name" required></label>
+                <label>Email* <input type="email" name="email"></label>
+                <label>Phone* <input type="tel" name="phone"></label>
+                <label> First Fuit Choice
+                    <select id="first-fruit">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                    </select>
+                </label>
+                <label> Second Fruit Choice
+                    <select id="second-fruit">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                    </select>
+                </label>
+                <label> Third Fruit Choice
+                    <select id="third-fruit">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                    </select>
+                </label>
+            </fieldset>
+        </form>
+        <div id="order">
 
         </div>
     </main>
@@ -68,5 +76,6 @@
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/last-updated.js"></script>
+    <script src="scripts/fresh.js"></script>
 </body>
 </html>

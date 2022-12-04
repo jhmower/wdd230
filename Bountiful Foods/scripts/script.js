@@ -1,9 +1,9 @@
 function toggleNav() {
     document.getElementById("navigation").classList.toggle("open")
-    document.getElementById("hamburger-btn").classList.toggle("open")
+    document.getElementById("hamburger-menu-btn").classList.toggle("open")
 }
 
-const x = document.getElementById("hamburger-btn")
+const x = document.getElementById("hamburger-menu-btn")
 
 x.onclick = toggleNav
 
