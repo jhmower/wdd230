@@ -23,15 +23,41 @@
         </div>
         <ul id="navigation">
             <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Order Fresh</a></li>
-            <li><a href="join.html">About Us</a></li>
+            <li><a href="fresh.html">Order Fresh</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
         </ul>
     </nav>
     <header>
         <img src="images/logo-light-green.webp" class="logo" alt="logo">
         <h1>Bountiful Foods</h1>
     </header>
-    <main>
+    <main id="about-main">
+        <div id="about-main-div">
+            <div id="history">
+                <h2>Our History</h2>
+                <h3>The Start</h3>
+                <p>
+                    Bountiful Foods was started by Bill and Stacy Stance in 1992. Since then new,
+                    new locations have been added and over 30 employees have joined our team which we
+                    think of as our family.
+                </p>
+                <h3>Our Goals</h3>
+                <p>
+                    The reasons Bill and Stacy started Bountiful Foods was to both provide a 
+                    place where health concious locals and tourists could get delicious drinks and fruit
+                    for a great price. Over the years we've helped thousands of customers do just that!
+                </p>
+            </div>
+            <div id="contact">
+                <h2>Contact Info</h2>
+                <p>Phone: <a href="tel:8010001234">(801)-000-1234</a></p>
+                <p>Email: <a href="mailto:questions@bountifulfoods.com">questions@bountifulfoods.com</a></p>
+                <p>Address: <a href="maps.google.com">100 South 250 West Carlsbad CA</a></p>
+            </div>
+            <div id="map">
+
+            </div>
+        </div>
     </main>
     <footer>
         <div id="footer-content">
@@ -48,5 +74,10 @@
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/last-updated.js"></script>
+    <script src="scripts/google-map.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoEolYTMKFCjzVpFCQyTedIciDv660weo&callback=initializeMap&v=weekly"
+    defer
+  ></script>
 </body>
 </html>

@@ -23,7 +23,7 @@
         </div>
         <ul id="navigation">
             <li><a href="index.html">Home</a></li>
-            <li><a href="fresh.html">Order Fresh</a></li>
+            <li><a href="fresh.html" class="active">Order Fresh</a></li>
             <li><a href="about.html">About Us</a></li>
         </ul>
     </nav>
@@ -31,34 +31,31 @@
         <img src="images/logo-light-green.webp" class="logo" alt="logo">
         <h1>Bountiful Foods</h1>
     </header>
-    <main>
-        <form method="get">
-            <fieldset>
-                <label>First Name* <input type="text" name="name" required></label>
-                <label>Email* <input type="email" name="email"></label>
-                <label>Phone* <input type="tel" name="phone"></label>
-                <label> First Fuit Choice
-                    <select id="first-fruit">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                    </select>
-                </label>
-                <label> Second Fruit Choice
-                    <select id="second-fruit">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                    </select>
-                </label>
-                <label> Third Fruit Choice
-                    <select id="third-fruit">
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                    </select>
-                </label>
-            </fieldset>
-        </form>
-        <div id="order">
-
+    <main id="fresh-main">
+        <div id="fresh-main-div">
+            <form method="get" onsubmit="order()">
+                <fieldset>
+                    <label>First Name* <input type="text" name="name" required id="input-name"></label>
+                    <label>Email* <input type="email" name="email" id="input-email"></label>
+                    <label>Phone* <input type="tel" name="phone" id="input-phone"></label>
+                    <label> First Fruit Choice
+                        <select id="first-fruit">
+                        </select>
+                    </label>
+                    <label> Second Fruit Choice
+                        <select id="second-fruit">
+                        </select>
+                    </label>
+                    <label> Third Fruit Choice
+                        <select id="third-fruit">
+                        </select>
+                    </label>
+                </fieldset>
+                <div id="order-button"><input type="submit" value="Order Now! &#129475;"></div>
+            </form>
+            <div id="order">
+                <h2>Your Last Order:</h2>
+            </div>
         </div>
     </main>
     <footer>

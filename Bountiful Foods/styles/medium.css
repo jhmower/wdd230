@@ -2,4 +2,20 @@
     #hero {
         background-color: black;
     }
+
+    #logo-title {
+        font-size: 30px;
+    }
+
+    header {
+        margin-top: 4.75em;
+    }
+
+    #logo-title .logo {
+        height: 75px;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+    }
 }

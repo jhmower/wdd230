@@ -22,7 +22,7 @@
             </div>
         </div>
         <ul id="navigation">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="fresh.html">Order Fresh</a></li>
             <li><a href="about.html">About Us</a></li>
         </ul>
@@ -31,10 +31,10 @@
         <img src="images/logo-light-green.webp" class="logo" alt="logo">
         <h1>Bountiful Foods</h1>
     </header>
-    <main>
+    <main id="home-main">
         <div id="hero">
             <picture id="hero-image">
-                <source>
+                <source media="(min-width:900px)" srcset="images/hero-large.jpg">
                 <source media="(min-width:520px)" srcset="images/hero-1-medium.jpg">
                 <img src="images/hero-1-small.jpg">
             </picture>
@@ -46,11 +46,36 @@
                 to visit the next time you're in Sothern California!
             </p>
         </div>
-        <div id="previous-orders">
+        <div id="previous-orders-div">
             <h2>Your Previous Orders</h2>
+            <div id="previous-orders">
+            </div>
         </div>
         <div id="weather">
-
+            <h2>Carlsbad Weather</h2>
+            <div id="todays-weather">
+                <img src="" alt="" id="condition-icon" />
+                <h4 id="current-temp">75º</h4>
+                <p id="current-description">Warm and Sunny</p>
+                <p id="current-humidity"></p>
+            </div>
+            <div id="forcast">
+                <div id="weather-day-1">
+                    <h4 id="day-1-title"></h4>
+                    <img src="" alt="" id="day-1-condition-icon" />
+                    <p id="day-1-temp">75º</p>
+                </div>
+                <div id="weather-day-2">
+                    <h4 id="day-2-title"></h4>
+                    <img src="" alt="" id="day-2-condition-icon" />
+                    <p id="day-2-temp">75º</p>
+                </div>
+                <div id="weather-day-3">
+                    <h4 id="day-3-title"></h4>
+                    <img src="" alt="" id="day-3-condition-icon" />
+                    <p id="day-3-temp">75º</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -68,5 +93,7 @@
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/last-updated.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/previous-orders.js"></script>
 </body>
 </html>
