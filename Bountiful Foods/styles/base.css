@@ -96,6 +96,7 @@ body {
 }
 #hero-image {
     border-radius: 30px;
+    width: 350px;
 }
 main div {
     border: thin solid gray;
