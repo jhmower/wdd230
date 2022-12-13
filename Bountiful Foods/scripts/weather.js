@@ -21,7 +21,6 @@ function processForcastDays(day) {
         const day1IconSrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
 
         day1Title.innerHTML = `${convertUnix(day.dt)}`
-        // day1Title.innerHTML = `${day.dt}`
         day1Temp.innerHTML = `${day.main.temp.toFixed(0)}&deg; F`
         day1Icon.setAttribute('src', day1IconSrc)
         day1Icon.setAttribute('alt', day.weather[0].description) 
@@ -32,7 +31,6 @@ function processForcastDays(day) {
         const day2IconSrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
 
         day2Title.innerHTML = `${convertUnix(day.dt)}`
-        // day2Title.innerHTML = `${day.dt}`
         day2Temp.innerHTML = `${day.main.temp.toFixed(0)}&deg; F`
         day2Icon.setAttribute('src', day2IconSrc)
         day2Icon.setAttribute('alt', day.weather[0].description) 
@@ -44,7 +42,6 @@ function processForcastDays(day) {
         const day3IconSrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
     
         day3Title.innerHTML = `${convertUnix(day.dt)}`
-        // day3Title.innerHTML = `${day.dt}`
         day3Temp.innerHTML = `${day.main.temp.toFixed(0)}&deg; F`
         day3Icon.setAttribute('src', day3IconSrc)
         day3Icon.setAttribute('alt', day.weather[0].description) 

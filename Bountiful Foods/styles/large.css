@@ -1,8 +1,4 @@
 @media screen and (min-width: 900px) {
-    #hero {
-        background-color: red;
-    }
-
     #home-main {
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: 12em 27em 16em;

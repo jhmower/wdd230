@@ -24,7 +24,6 @@ nav ul {
     margin: 10px 10px 0 0;
 }
 nav button {
-    /* margin: .2rem 2vw; */
     border: none;
     font-size: 2rem;
     color: #F6F4F3;
@@ -40,7 +39,6 @@ nav ul li a {
     padding: .5rem 2vw;
     text-decoration: none;
     color: #F6F4F3;
-    size: 20px;
     font-size: 20px;
 }
 
@@ -93,7 +91,6 @@ body {
     grid-template-rows: auto 10em auto 18em;
 }
 #hero {
-    background-color: gray;
     justify-content: center;
     justify-self: center;
 }
@@ -320,8 +317,6 @@ select {
 #map {
     width: auto;
     height: 400px;
-    /* height: 400px; */
-    /* width: 100%;s */
     margin: 5px;
     border: none;
   }
